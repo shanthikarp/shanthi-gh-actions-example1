@@ -19,7 +19,9 @@ jobs:
     steps:
       - name: step1
         run: echo "test"
-      
+    outputs:
+      output1: ${{ github.event.type }}
+      run: echo "$output1"
        
      
     
