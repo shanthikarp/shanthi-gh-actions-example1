@@ -12,9 +12,6 @@ on:
       workflow_output1:
         description: " Printing the event triggered the workflow"
         value: ${{github.event.type}}
-      workflow_output2:
-       description: " Printing the event triggered the workflow"
-      value: ${{github.event.branches}} 
 jobs:
   job1:
     name: "Build"
