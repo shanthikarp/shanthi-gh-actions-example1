@@ -20,7 +20,7 @@ jobs:
       output1: ${{ github.event.type }}
     steps:
       - name: step1
-        run: echo $output1
+        run: echo  ${{ github.ref }}
        
      
     
