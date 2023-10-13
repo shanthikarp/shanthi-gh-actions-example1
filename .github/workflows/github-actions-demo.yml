@@ -11,12 +11,12 @@ on:
    outputs:
       workflow_output1:
         description: " Printing the event triggered the workflow"
-        value: ${{events.event_name}}
+        value: ${{github.event.type}}
       workflow_output2:
        description: " Printing the event triggered the workflow"
-      value: ${{events.branches}} 
+      value: ${{github.event.branches}} 
 jobs:
-  job:
+  job1:
     name: "Build"
     runs-on: ubuntu-latest
     steps:
