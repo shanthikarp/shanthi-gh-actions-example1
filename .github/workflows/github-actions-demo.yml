@@ -20,6 +20,8 @@ jobs:
       output1: ${{ github.event.type }}
     steps:
       - name: step1
+      - uses: actions/checkout@v4
+      - name: step2
         run: echo  ${{ github.ref }}
              echo ${GITHUB_WORKFLOW}
        
