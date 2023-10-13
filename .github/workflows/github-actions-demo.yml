@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: step1
         run: echo  ${{ github.ref }}
-             echo ${{github.GIT_COMMITTER_NAME}}
+             echo ${GITHUB_WORKFLOW}
        
      
     
