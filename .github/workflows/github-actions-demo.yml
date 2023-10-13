@@ -1,0 +1,24 @@
+name: Github actions workflow
+on: 
+  push:
+  pull_request:
+    branches: 
+    - main
+  schedule:
+      - cron: '15 6 * * 0'  
+  workflow_dispatch: 
+  workflow_call:
+   outputs:
+      workflow_output1:
+        description: " Printing the event triggered the workflow"
+        value: ${{events.event_name}}
+      workflow_output2:
+       description: " Printing the event triggered the workflow"
+      value: ${{events.branches}} 
+jobs:
+  job:
+    name: "Build"
+    runs-on: ubuntu-latest
+    
+
+      
